@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "darbuka";
+  font-weight: 500;
+  src: url("../font/Darbuka-Medium_MFW.woff");
+}
+
+body {
+  font-family: "darbuka", sans-serif;
+}
+
+.container {
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 7vw;
+  display: flex;
+  align-items: center;
+  color: #009548;
+}
+
+h1 img {
+  width: 10.31vw;
+  margin-left: .5vw;
+}
+
+p {
+  font-size: 2vw;
+  width: 46.45vw;
+}
+
+p img {
+  display: inline-block;
+  width: 3.125vw;
+}
+
+p:last-of-type {
+  margin-top: 6vw;
+  color: white;
+}
+
+.container > img {
+  display: none;
+}
+
+@media (max-width: 1023.98px) {
+  .container {
+    background-image: none;
+    min-height: 0;
+    padding-top: 18.22vw;
+    position: relative;
+  }
+
+  .container > img {
+    width: 100%;
+    display: block;
+  }
+
+  h1 {
+    font-size: 20vw;
+    color: #009548;
+  }
+  
+  h1 img {
+    width: 29.6vw;
+    margin-left: 1vw;
+  }
+  
+  p {
+    font-size: 9.51vw;
+    line-height: 1;
+    width: 88%;
+  }
+  
+  p img {
+    width: 15.73vw;
+  }
+
+  p:first-of-type {
+    margin-top: 21vw;
+    margin-bottom: 30vw;
+  }
+  
+  p:last-of-type {
+    position: absolute;
+    bottom: 12.8vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
